@@ -15,3 +15,10 @@ Advance Reading:
 https://websitesetup.org/html5-cheat-sheet/
 
 
+Tools:
+1. https://platform.html5.org/
+2. https://validator.w3.org/
+
+
+
+
