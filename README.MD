@@ -6,6 +6,12 @@ For Trainees:
 
 3. You can copy any file from our project like the index.html and make changes there. Take note that you need to adjust the values in the follwing attributes like src='', href='' to match your changed directory. 
 
+
+You learn Fork on this video/post...
+1. https://www.youtube.com/watch?v=e3bjQX9jIBk
+2. https://stackoverflow.com/questions/20984802/how-can-i-keep-my-fork-in-sync-without-adding-a-separate-remote/21131381#21131381
+
+
 You can read more about collaboration in here..
 https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/working-with-forks
 
