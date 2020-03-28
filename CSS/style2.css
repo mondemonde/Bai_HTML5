@@ -30,6 +30,11 @@ hr {
 }
 
 
+h1,h2 {
+  text-transform: uppercase;
+}
+
+
      footer{   
        color:#ffffff;
        padding-top: 10px;
@@ -44,8 +49,9 @@ hr {
        background-color:#f4f4f4;     
      }
      
-     p{
+     p {
          text-align: justify;
+         padding-left: 1rem;
      }
    
      /* Header **/
