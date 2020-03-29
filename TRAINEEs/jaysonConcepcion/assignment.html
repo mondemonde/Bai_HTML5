@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+    <div class="container">
+        <form>
+            <h2 class="center-align">Form Assignment</h2>
+
+            <label for="favcolor">Select your favorite color:</label>
+            <input type="color" id="favcolor" name="favcolor" value="#ff0000">
+
+
+            <input list="browsers">
+            <label for="browsers">Choose your weapon:</label>
+            <datalist id="browsers">
+                <option value="sword">
+                <option value="gun">
+                <option value="sword gun">
+                <option value="gun sword">
+                <option value="sword with a gun">
+                <option value="gun with a sword"></option>
+
+            </datalist>
+
+
+            <input type="date" id="birthday" name="birthday">
+            <label for="birthday">Birthday:</label>
+
+
+            <input type="datetime-local" id="datetime" name="datetime">
+            <label><span>Date and Time</span></label>
+
+
+            <input type="email" id="email" name="email">
+            <label for="email">Enter your email:</label>
+
+            <br>
+            <br>
+            <input type="month" id="bdaymonth" name="bdaymonth">
+            <br>
+            <label for="bdaymonth">Birthday (month and year):</label>
+
+
+
+            <input type="number" id="quantity" name="quantity" min="5" max="10">
+            <label for="quantity">Quantity (between 5 and 10):</label>
+
+
+            <input type="range" id="points" name="points" min="0" max="10">
+            <label for="points">Points (between 0 and 10):</label>
+
+
+            <input type="search" id="gsearch" name="gsearch">
+            <label for="gsearch">Search Google:</label>
+            <br>
+            <br>
+            <input type="reset">
+
+
+            <input type="time" id="appt" name="appt">
+            <label for="appt">Select a time:</label>
+
+
+            <input type="url" id="homepage" name="homepage">
+            <label for="homepage">Add your homepage:</label>
+
+            <br>
+            <br>
+            <input type="week" id="week" name="week">
+            <br>
+            <label for="week">Select a week:</label>
+
+            <br>
+            <br>
+            <div class="center-align">
+                <button class=" btn waves-effect waves-light" type="submit" name="action">SUBMIT
+                    <i class="material-icons right"></i>
+                </button>
+            </div>
+        </form>
+    </div>
+
+</body>
+
+</html>
