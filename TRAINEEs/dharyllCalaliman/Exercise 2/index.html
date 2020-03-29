@@ -1,13 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Input Html Exercise</title>
 </head>
 <body>
     <div>
-        <form onsubmit="Display();">
+        <form id="form1" action="#" onsubmit="Display();" onreset="Clear()">
             <label for="favcolor">Font color: </label>
                 <input type="color" id="favcolor"> <br><br>
             <label for="fontsize">Font size: (0 - 100): </label>
@@ -39,22 +37,26 @@
                 <input type="search" id="search"> <br><br>
             <label for="homepage">Enter a site homepage: </label>
                 <input type="url" id="homepage" placeholder=" sample: www.google.com "> <br><br>
-            <input type="submit" value="Submit">
-            <input type="Reset" id="resetbtn">
+            <input type="submit" value="Submit" id="submitbtn">
+            <input type="Reset" value="Reset" id="resetbtn">
         </form>
     </div>
-    <div style="border: 1px;" width="100" length="100">
+    <div>
         <p id="result"></p>
     </div>
     <script>
         function Display(){
-            let x = document.forms[0];
-            let text = "";
-
-            for(let i = 0; i < x.length; i++){
-                txt += (<HTMLInputElement>.elements[i]</HTMLInputElement>).value + "<br>";
+            let message = "";
+            let x = document.getElementById("form1").elements.length - 2;
+            for(let i = 0; i < x; i++)
+            {
+                message += document.getElementById("form1").elements[i].value + "<br><br>";
             }
-            document.getElementById("result").innerHTML = txt;
+
+            document.getElementById("result").innerHTML = message;
+        }
+        function Clear(){
+            document.getElementById("result").innerHTML = "";
         }
     </script>
 </body>
