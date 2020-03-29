@@ -1,0 +1,47 @@
+h3 {
+  text-align: center;
+  color: white;
+}
+.myclass {
+  margin: auto;
+  width: 60%;
+  border: 5px solid #ffc401;
+  padding: 10px;
+}
+label {
+  display: block;
+  position: relative;
+  padding-left: 120px;
+  font-weight: bold;
+  color:white
+}
+label > span {
+  position: absolute;
+  left: 0;
+}
+
+input#datetime {
+  margin-left: 50px;
+}
+
+input#points {
+  margin-top: 4px;
+  margin-left: 50px;
+}
+
+input#quantity {
+  margin-left: 6px;
+}
+
+input#appt {
+  margin-left: 25%;
+}
+
+input.reset {
+  margin: 0px auto;
+  display: block;
+}
+
+body {
+  background-color: rgb(8, 8, 8);
+}
