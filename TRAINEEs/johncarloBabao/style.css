@@ -1,0 +1,52 @@
+h3 {
+    text-align: center;
+    color: white;
+  }
+  .myclass {
+    margin: auto;
+    width: 60%;
+    border: 30px solid #F9F8F8;
+    padding: 50px;
+  }
+  label {
+    display: block;
+    position: relative;
+    padding-left: 300px;
+    font-weight: italic;
+    color:white
+  }
+  label > span {
+    position: absolute;
+    left: 20;
+  }
+  
+  input#datetime {
+    margin-left: 5px;
+  }
+  
+  input#points {
+    margin-top: 10px;
+    margin-left: 10px;
+  }
+  
+  input#quantity {
+    margin-left: 6px;
+  }
+  
+  input#appt {
+    margin-left: 0%;
+  }
+  
+  input.reset {
+    margin: 0px auto;
+    display: block;
+  }
+
+  input.submit {
+    margin: 10px auto;
+    display: block;
+  }
+  
+  body {
+    background-color: rgb(15, 48, 49);
+  }
