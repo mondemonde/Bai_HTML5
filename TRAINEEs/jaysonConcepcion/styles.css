@@ -4,7 +4,12 @@
     padding: 20px;
     display:flex;
     flex-direction: column ;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: flex;
+  align-items: center;
+  justify-content: center;
+  
    
+}
+form{
+    border-color: red;
 }
