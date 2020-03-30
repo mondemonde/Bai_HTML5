@@ -47,5 +47,10 @@ header{
     min-height:70px;
     border-bottom:#e8491d 3px solid;
   }
-  
-  
+  .flex-container{
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;  
+  }
