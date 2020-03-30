@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <title>Page Title</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+    
+    <label id="color"></label>
+    <label id="search"></label>
+    <label id="homepage"></label>
+    <label id="language"></label>
+    <label id="week"></label>
+    <label id="date"></label>
+    <label id="time"></label>
+    <label id="datetime"></label>
+    <label id="start"></label>
+    <label id="email"></label>
+    <label id="quantity"></label>
+
+
+    
+    <script>
+        const queryString = window.location.search;
+        const urlParams = new URLSearchParams(queryString);
+        const color = urlParams.get('color');
+        document.getElementById('color').innerHTML = "color: " + color;
+        const search = urlParams.get('search');
+        document.getElementById('search').innerHTML = "search: " + search;
+        const homepage = urlParams.get('homepage');
+        document.getElementById('homepage').innerHTML = "homepage: " + search;
+        const language = urlParams.get('language');
+        document.getElementById('language').innerHTML = "language: " + search;
+        const week = urlParams.get('week');
+        document.getElementById('week').innerHTML = "week: " + search;
+        const date = urlParams.get('date');
+        document.getElementById('date').innerHTML = "date: " + search;
+        const time = urlParams.get('time');
+        document.getElementById('time').innerHTML = "time: " + search;
+        const datetime = urlParams.get('datetime');
+        document.getElementById('datetime').innerHTML = "datetime: " + search;
+        const start = urlParams.get('start');
+        document.getElementById('start').innerHTML = "month: " + search;
+        const email = urlParams.get('email');
+        document.getElementById('email').innerHTML = "email: " + search;
+        const quantity = urlParams.get('quantity');
+        document.getElementById('quantity').innerHTML = "number-slider: " + search;
+    </script>
+</body>
+</html>
