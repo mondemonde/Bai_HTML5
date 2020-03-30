@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!--comment-->
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- Quote from Wikipedia: "UTF-8 encodes each of the 1,112,064 code  -->
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <!-- <base href="https://www.xamun.com/" target="_blank"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Fundamentals</title>
+
+
+     <!-- Bootstrap CSS -->
+     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  
+
+    <link rel="stylesheet" href="style.css">   
+
+    <link rel="icon" href="../../html5.ico">
+
+    <script src='../../Scripts/app.js'></script>
+
+
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+
+  
+    <header class="navHeader">
+        <div class='container'>
+
+            <nav class="navbar navbar navbar-expand-lg">
+
+                <span class="navbar-brand">
+                    <img src="../../images/HTML5.png" alt="logo of HTML5" width="50" height="50" >
+                </span>
+
+                <span class="navbar-brand" >HTML5 Fundamentals</span>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                  <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                  <div class="navbar-nav">
+                    <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+                    <a class="nav-item nav-link" href="#">Features</a>
+                    <a class="nav-item nav-link" href="#">Pricing</a>
+                    <a class="nav-item nav-link disabled" href="#">Disabled</a>
+                  </div>
+                </div>
+              </nav>
+
+        </div>
+
+      
+
+    </header>
+
+   
+    <main class='container'>
+          <h2>Forms</h2>
+          <section>
+              <form id="myForm">
+                  <br><label><span>Search </span></label><input type="search" id="search" name="search" />
+                  <br><label><span>Enter URL </span></label><input type="url" id="homepage" name="homepage" />
+                  <br><label for="color"><span>Select Color </span></label><input type="color" name="color" value="#000000" class="color"></br>
+                  <br><label><span>Select Language </span></label>
+                  <input list="language" name="language" placeholder="Language" />
+                    <datalist id="language">
+                      <option value="English"> </option>
+                      <option value="Filipino"> </option>
+                      <option value="Espanol"> </option>
+                      <option value="Mandarin"> </option>
+                      <option value="Japanese"> </option>
+                    </datalist>
+                    <br><label><span>Enter Week </span></label><input
+                      type="week"
+                      name="week"
+                      id="inputweek"
+                      min="2020-W1"
+                      max="2020-W26"
+                      required
+                    />
+                    <br><label><span>Enter Date </span></label><input type="date" id="date" name="date" />
+                    <br><label><span>Enter time </span></label><input type="time" id="time" name="time" min="00:00" max="24:00" required />
+                    <br><label><span>Enter Date and Time </span></label><input type="datetime-local" id="datetime" name="datetime">
+                    <br><label><span>Enter Month </span></label><input type="month" id="start" name="start" min="2020-03" value="2020-03" />
+                    <br><label><span>Enter Email </span></label><input type="email" id="email" name="email" />
+                    <br><label><span>Enter Number </span></label><input type="number" id="quantity" name="quantity" min="0" max="100000" />
+                    <br><label><span>Choose from 0 to 1000 </span></label><p>Value: <span id="value"></span></p><input type="range" id="range" name="range" min="0" max="1000" />
+
+                    <br><br><input class="reset" type="button" onclick="myFunction()" value="Reset form">
+                
+              </form>
+            </section>
+    </main>
+  </div>
+                      
+ <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script>
+      function myFunction() {
+        document.getElementById("myForm").reset();
+      }
+    </script>
+    <script>
+      var slider = document.getElementById("range");
+      var output = document.getElementById("value");
+      output.innerHTML = slider.value;
+      
+      slider.oninput = function() {
+        output.innerHTML = this.value;
+      }
+      </script>
+</body>
+
+</html>
