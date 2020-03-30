@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<!--comment-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Quote from Wikipedia: "UTF-8 encodes each of the 1,112,064 code  -->
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <!-- <base href="https://www.xamun.com/" target="_blank"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      --href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment</title>
+  </head>
+</html>
+
+<body>
+  <h3 class="myh3">HTML Assignment</h3>
+
+    <div class = "myclass">
+        <form id="myForm">
+  <br><label><span>Select Color of Choice</span><input type="color" id="color" name="favecolor" value="#000000" ></label></br>
+  <br><label><span>Select Favorite Browser</span>
+  <input list="browsers" name="browsers" placeholder="Choose Browser..." />
+    <datalist id="browsers">
+      <option value="Google Chrome"> </option>
+      <option value="Mozilla Firefox"> </option>
+      <option value="Microsoft Edge"> </option>
+      <option value="Opera"> </option>
+    </datalist>
+</label></br>
+
+
+    <br><label><span>Select Date</span><input type="date" id="date" name="date" /></label></br>
+
+
+    <br><label><span>Select Date and Time</span><input type="datetime-local" id="datetime" name="datetime"></label></br>
+
+
+    
+    <br><label><span>Email</span><input type="email" id="email" name="email" /></label></br>
+
+    <br><label><span>Select Month</span><input type="month" id="start" name="start" min="2019-03" value="2019-03" /></label>
+
+    <br><label><span>Choose Number</span><input type="number" id="quantity" name="quantity" min="1" max="14" /></label>
+  
+    <br><label><span>Choose from 0 to 10</span> <input type="range" id="points" name="points" min="0" max="10" /></label></br>
+
+    <label><span>Search</span><input type="search" id="gsearch" name="gsearch" /></label>
+
+    <br><label><span>Select time between 9 a.m to 6 p.m</span><input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></label></br>
+
+    <br><label><span>URL</span><input type="url" id="homepage" name="homepage" /></label></br>
+
+    <br><label><span>Weeks</span><input
+      type="week"
+      name="weeks"
+      id="camp-week"
+      min="2019-W1"
+      max="2019-W26"
+      id = "weeks"
+     
+      required
+    /></label></br>
+    
+    <input class="reset" type="button" onclick="myFunction()" value="Reset form">
+
+    </form>
+</div>
+<script>
+    function myFunction() {
+      document.getElementById("myForm").reset();
+    }
+    </script>
+</body>
