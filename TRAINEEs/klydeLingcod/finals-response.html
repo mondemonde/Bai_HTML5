@@ -1,0 +1,52 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Activity</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/finals.css">
+    <link rel="icon" href="html5.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+<!-- I used bootstrap just for the header nav design -->
+
+<body>
+    <nav class="navbar">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="#">Klyde Lingcod</a>
+            </div>
+        </div>
+    </nav>
+    <div>
+        <h1>Account Successfully Registered!</h1>
+        <div>
+            <h4>Fullname: <span class="name"></span></h4>
+        </div>
+        <div>
+            <h4>Email: <span class="email"></span></h4>
+        </div>
+        <div>
+            <h4>Password: <span class="password"></span></h4>
+        </div>
+        <a href="finals.html">Back</a>
+    </div>
+</body>
+<script>
+    $(function () {
+        let searchParams = new URLSearchParams(window.location.search)
+        let fname = searchParams.get('fname');
+        let lname = searchParams.get('lname');
+        let email = searchParams.get('email');
+        let password = searchParams.get('password');
+        $(".name").html(fname+ " "+ lname);
+        $(".email").html(email);
+        $(".password").html(password);
+    })
+</script>
+
+</html>
