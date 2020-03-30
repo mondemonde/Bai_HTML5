@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>HTML Form</title>
+
+    <meta name="author" content="Kathlyn Teves">
+    <meta name="description"
+        content="This is a page with a form for entering data that features the new html input types.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="CSS/form-style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css"
+        integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+    <link rel="icon" href="Images/HTML5.png">
+
+    <script src='Scripts/app.js'></script>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar">
+            <a class="navbar-brand" href="index2.html">HTML5</a>
+            <form class="form-inline">
+                <input class="form-control" type="search" placeholder="Search">
+                <button type="submit" class="form-control"><i class="fas fa-search"></i></button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+
+        <div class="container">
+            <div class="head">
+                <h1 class="title">HTML Form</h1>
+            </div>
+            <form class="form-style">
+                <div class="form-row">
+                    <div class="form-group col-6">
+                        <label for="Iemail">Email</label>
+                        <input class="form-control" type="email">
+                    </div>
+
+                    <div class="form-group col-6">
+                        <label for="INumber">Number</label>
+                        <input class="form-control" type="number">
+                    </div>
+
+                </div>
+                <div class="form-row">
+                    <div class="form-group col-sm-1">
+                        <label for="Icolor">Color</label>
+                        <input class="form-control" type="color" id="Icolor" name="Icolor">
+                    </div>
+                    <div class="form-group col-sm-11">
+                        <label for="Idatalist">Data list</label>
+                        <input class="form-control" list="datalist" placeholder="Color list">
+                        <datalist id="datalist">
+                            <option value="Black">
+                            <option value="Blue">
+                            <option value="Red">
+                            <option value="Pink">
+                        </datalist>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col">
+                        <label for="Idate">Date</label>
+                        <input class="form-control" type="date">
+                    </div>
+                    <div class="form-group col">
+                        <label for="Idatetime">Date & Time</label>
+                        <input class="form-control" type="datetime-local">
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="Itime">Time</label>
+                        <input class="form-control" type="time">
+                    </div>
+                    <div class="form-group col">
+                        <label for="Imonth">Month</label>
+                        <input class="form-control" type="month">
+                    </div>
+
+                </div>
+                <div class="form-group">
+                    <label for="Irange">Range</label>
+                    <input class="form-control" type="range" min="1" max="100" value="50" class="slider" id="myRange">
+                    <p>Value: <span id="demo"></span></p>
+                </div>
+                <div class="form-row">
+                    <div class="form-group col">
+                        <label for="Iurl">Url</label>
+                        <input class="form-control" type="url">
+                    </div>
+                    <div class="form-group col">
+                        <label for="Iweek">Week</label>
+                        <input class="form-control" type="week">
+                    </div>
+                </div>
+                <div class="form-group">
+                    <input class="form-control Ireset" type="reset">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer></footer>
+    <script>var slider = document.getElementById("myRange");
+        var output = document.getElementById("demo");
+        output.innerHTML = slider.value;
+
+        slider.oninput = function () {
+            output.innerHTML = this.value;
+        }</script>
+</body>
+
+</html>
