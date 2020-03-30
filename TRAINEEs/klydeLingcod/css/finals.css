@@ -1,0 +1,75 @@
+*{
+    font-family: 'Lato', sans-serif;
+    transition: 0.5s;
+}
+label{
+    font-weight: 400;
+    display: block;
+    margin-bottom: 5px;
+
+}
+input{
+    margin-bottom:20px;
+}
+input[type=number]{
+    min-width: 125px;
+}
+input:not([type="submit"]):not([type="reset"]):not([type="color"]):not([type="number"]){
+    width: 100%;
+}
+input[type=submit],input[type=reset]{
+    color: #fff;
+    background-color: #222;
+    border: 0px;
+    font-size: 15px;
+    text-transform: uppercase;
+    margin:5px 10px;
+    padding: 5px 10px;
+}
+input[type=submit]:hover,input[type=reset]:hover{
+    color: #ffe400;
+
+}
+h1{
+    font-weight: 700;
+
+}
+form >div {
+    display: flex;
+    flex-wrap: wrap;
+}
+form >div > div{
+    width: calc(50% - 20px);
+    margin: auto;
+}
+body > div{
+    padding: 75px 0px;
+    width: 75%;
+    margin:auto;
+}
+body .navbar{
+    top: 0%;
+    position: fixed;
+    width: 100%;
+    background-color: #222;  
+    border-radius: 0px;
+}
+a.navbar-brand{
+    color: #ffe400!important;
+}
+.navbar ul li a:hover,.navbar ul li a:focus{
+    background-color: #222!important; 
+    color: #ffe400;
+}
+body .navbar a{
+    color: #fff;
+}
+.name, .email, .password{
+    font-weight: bold;
+}
+@media (max-width: 780px){
+    form >div > div{
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+}
