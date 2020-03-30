@@ -23,10 +23,9 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-
     <link rel="stylesheet" href="CSS/style2.css">
     <link rel="stylesheet" href="CSS/style3.css">
-    
+  
 
 
 
@@ -46,7 +45,7 @@
             <nav class="navbar navbar-expand-lg">
 
                 <span class="navbar-brand">
-                    <img src="images/HTML5.png" alt="logo of HTML5" width="50" height="50">
+                    <img src="images/HTML5.png" alt="logo of HTML5" width="100" height="100">
                 </span>
 
                 <span class="navbar-brand">HTML5 Fundamentals</span>
@@ -398,17 +397,27 @@
                 <article>
                     <h3>Styling Tables</h3>
 
-                    <table id="t01">                       
-                                       
+                   
+                    <table id="t01">    
+                        <caption>this is a sample data</caption>                   
+                      <thead>  
+                                         
                         <tr>
-                            <th>TRAINEES</th>
+                            <th rowspan="2" style="background-color: aliceblue;color: black;">Trainees</th>   
+                            <th colspan="4" style="background-color: whitesmoke;text-align: center;color: black;">Metrics</th>
+                        </tr>     
+
+                        <tr>
+                           
                             <th>DAY1</th>
                             <th>day2</th>
                             <th>day3</th>
                             <th>quiz</th>
                             <th>total ratings%</th>
-                        </tr>              
-                       
+                        </tr>  
+
+                    </thead> 
+                    <tbody>
                         <tr>
                             <td>James "Lucky Jim" Logan</td>
                             <td>61</td>
@@ -435,17 +444,53 @@
                             <td>80</td>
                             <td>74</td>
 
-                        </tr>                   
+                        </tr>  
+
+                    </tbody>    
+                    <tfoot>
+                        <tr>
+                            <td colspan="6" style="text-align: center;"> note: not real values</td>
+                        </tr>
+                    </tfoot>             
                    
                     </table>
       
                 </article>
 
-              
+              <article>
+                  <h3>IMAGES</h3>
+                  <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering animata corpora quaeritis. Summus brains sit​​.</p>
+
+               <section>
+                   <h4>IMG tag</h4>
+                <img src="Images/Evo1.PNG" alt="Dino image" width="100px">
+                
+                </section>
+
+                <section><h4>Picture Tag</h4>
+                
+                    <picture>
+                        <source media='(max-width:500px)' srcset="Images/Evo3.png">
+                        <source media='(max-width:800px)' srcset="Images/Evo2.png">    
+                        <img src="Images/Evo1.PNG" alt="dino">
+
+                    </picture>
+                
+                </section>
+
+              </article>
                
-               
+              <div style="background-color: blue;width: 800px; height:800px ;"  >
+            
+                <img src="images/Dino.jpg" alt="" style="object-fit: cover;width: 100%;height: 100%;">
+
+            </div>
 
             </section>
+
+           
+
+
 
             <hr>
 
@@ -458,74 +503,7 @@
                     morbo vel maleficia? De apocalypsi gorger omero undead survivor dictum mauris. Hi mindless mortuis
                     soulless creaturas, imo evil stalking monstra adventus resi dentevil vultus comedat cerebella
                     viventium. Qui animated corpse.</p>
-                <aside>
-                    <p>
-                        <strong>Assignment of TRAINEES:</strong> <br>
-
-                        We only have 1 day left for HTML5 and as a developer you need to be aware of how users enter
-                        data in hte page.
-                        Html5 has input element and there in it a lot of helper types for us developer.We will try to
-                        cover this on our last meeting
-                        so in advance I want you to concentrate on this topic.
-                        I am giving you now this as an assigment...
-
-
-                    </p>
-                    <p>
-                        Create a page with a form for entering data that features the new html input types, such as the
-                        following:
-                        <div style="padding-left: 3rem;">
-                          <dl><!--  definition list -->
-                            <dt>color</dt>
-                            <dd>not required</dd>
-                            <dt>datalist</dt>
-                            <dd>not required</dd>
-                            <dt>date</dt>
-                            <dd>required</dd>
-                            <dt>datetime</dt>
-                            <dd>not required</dd>
-
-                            <dt>email</dt>
-                            <dd>required</dd>
-
-                            <dt>month</dt>
-                            <dd>not required</dd>
-
-
-                            <dt>number</dt>
-                            <dd>required,greater then 1 and less than 100</dd>
-
-                            <dt>range</dt>
-                            <dd>not required</dd>
-
-                            <dt>search</dt>
-                            <dd>required</dd>
-
-                            <dt>reset</dt>
-                            <dd>button</dd>
-
-
-
-
-                            <dt>time</dt>
-                            <dd>not required</dd>
-                            <dt>url</dt>
-                            <dd>required</dd>
-                            <dt>week</dtd>
-                                <dd>not required</dd>
-
-                        </dl>   
-                        </div>
-                       
-                    </p>
-
-                   <p>***add water marks or placeholder to all  if possible.</p>
-                    
-
-                    <p>there are other types but at least show all listed above in your page.</p>
-
-
-                </aside>
+               
 
 
                 <article>
@@ -538,30 +516,36 @@
             <article>
                 <h3>Examples</h3>
 
-                <form class="w-50" action="responsePage.html" method="GET">
-                    <div class="form-group">
-                      <label for="exampleInputEmail1">Email address</label>
-                      <input name="userName"  type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                      <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
-                    </div>
-                    <div class="form-group">
-                      <label for="exampleInputPassword1">Password</label>
-                      <input name=pword type="password" class="form-control" id="exampleInputPassword1">
-                    </div>
 
 
-                    <div class="form-group">
-                        <label for="color">BG Color</label>
-                        <input name=color type="color" class="form-control" id="color">
-                      </div>
+           
 
-                    <div class="form-group form-check">
-                      <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                      <label class="form-check-label" for="exampleCheck1">Check me out</label>
-                    </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
-                  </form>
 
+
+<form action="responsePage.html" method="GET">
+  <div class="form-group">
+    <label for="exampleInputEmail1">Email address</label>
+    <input type="email" required class="form-control" name="email" id="exampleInputEmail1" aria-describedby="emailHelp">
+    <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+  </div>
+  <div class="form-group">
+    <label for="exampleInputPassword1">Password</label>
+    <input type="password" name="pword" class="form-control" id="exampleInputPassword1">
+  </div>
+
+  <div class="form-group">
+    <label for="colorId">Pick Color</label>
+    <input type="color" name="color" class="form-control" id="colorId">
+  </div>
+
+  
+
+
+
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+                
 
             
             </article>
@@ -574,16 +558,30 @@
                <article>
                    <h3>Example#1</h3>
                
+<!-- 
+                   <div style="display: flex;flex-direction: column;">
+                    <div>1</div> 
+                    <div>2</div>
+                    <div>3</div>
+                    <div>4</div>
+                    -->
 
+
+
+
+
+                  
+                   </div>
                     <div id='mainFlexbox' style="display: flex;flex-direction: column;">
     
                         <div id="group1" >
                             <label>First Name</label>
                             <input value="James"  />
                         
-                            <label class="right-inline">Last Name
-                            <input name='lastName' value="Bond" class="input-control" />
+                            <label class="right-inline" style="width: 800px;">Last Name
+                          <input name='lastName' value="Bond" class="input-control" />  
                             </label>
+                           
                          </div>
                         
                         <div id="group2" >
@@ -612,6 +610,94 @@
 
            </section>
 
+           <hr>
+
+           <aside>
+            <p>
+                <h2>Final Assignment for TRAINEES:</h2> <br>
+
+                We only have 1 day left for HTML5 and as a developer you need to be aware of how users enter
+                data in hte page.
+                Html5 has input element and there in it a lot of helper types for us developer.We will try to
+                cover this on our last meeting
+                so in advance I want you to concentrate on this topic.
+                I am giving you now this as an assigment...
+
+
+            </p>
+            <p>
+                Create a page with a form for entering data that features the new html input types, such as the
+                following:
+                <div style="padding-left: 3rem;">
+                  <dl><!--  definition list -->
+                    <dt>color</dt>
+                    <dd>not required</dd>
+                    <dt>datalist</dt>
+                    <dd>not required</dd>
+                    <dt>date</dt>
+                    <dd>required</dd>
+                    <dt>datetime</dt>
+                    <dd>not required</dd>
+
+                    <dt>email</dt>
+                    <dd>required</dd>
+
+                    <dt>month</dt>
+                    <dd>not required</dd>
+
+
+                    <dt>number</dt>
+                    <dd>required,greater then 1 and less than 100</dd>
+
+                    <dt>range</dt>
+                    <dd>not required</dd>
+
+                    <dt>search</dt>
+                    <dd>required</dd>
+
+                    <dt>reset</dt>
+                    <dd>button</dd>
+
+
+
+
+                    <dt>time</dt>
+                    <dd>not required</dd>
+                    <dt>url</dt>
+                    <dd>required</dd>
+                    <dt>week</dtd>
+                        <dd>not required</dd>
+
+                </dl>   
+                </div>
+               
+            </p>
+
+           <p>RULES:
+               <ul>
+                   <li>DO NOT USE TABLE</li>
+                   <li>Use Flexbox</li>
+                   <li>any orientation or design will do (single or double column will be ok)</li>
+                   <li>must be responsive </li>
+                   <li>add water marks or placeholder attributes to all  if possible.</li>
+                   <li>there are other types but at least show all listed above in your page.</li>
+               </ul>
+              <strong> some helpul resource:</strong>
+               <ul id='finalList'>
+                   <li><a href="https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01">https://dev.to/drews256/ridiculously-easy-row-and-column-layouts-with-flexbox-1k01</a> </li>
+                   <li><a href="https://zellwk.com/blog/simple-form-with-flexbox/"> https://zellwk.com/blog/simple-form-with-flexbox/</a></li>
+                   <li><a href="https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767">
+                       https://webdesign.tutsplus.com/tutorials/building-responsive-forms-with-flexbox--cms-26767</a></li>
+               </ul>   
+               <br>
+               <br>         
+           </p>         
+           
+
+
+        </aside>
+
+
         </article>
         <!--END OF MAIN article-->
 
@@ -624,7 +710,7 @@
     </footer>
 
     <script>
-        updateTime();
+       // updateTime();
     </script>
 
 

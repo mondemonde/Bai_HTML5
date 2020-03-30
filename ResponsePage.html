@@ -9,9 +9,12 @@
         window.onload = function() { 
 
 var divResult = document.getElementById('resultDiv');
+
           const params = new URLSearchParams(window.location.search);
+
           params.forEach((value,name)=>{
               divResult.append(`${name}: ${value}`);
+             
               divResult.append(document.createElement('br'));
 
               divResult.style.backgroundColor =params.get('color');
@@ -19,14 +22,14 @@ var divResult = document.getElementById('resultDiv');
           });        
 
         };
-      </script>
+     </script>
 </head>
 <body>
     <div id=resultDiv>
 
     </div>
 
-    <a href="index2.html#footer">Back</a>
+    <a href="index3.html#footer">Back</a>
 
 </body>
 </html>

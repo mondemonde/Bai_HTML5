@@ -12,15 +12,27 @@ table {
     padding: 15px;
     text-align: left;
   }
-  /* table#t01 tr:nth-child(even) {
-    background-color: #eee;
-  } */
-  table#t01 tr:nth-child(odd) {
+ 
+  /* table#t01 tr:nth-child(odd) {
    background-color:turquoise ;
-  }
+  } */
+
   table#t01 th {
     background-color: black;
     color: white;
     text-transform: uppercase;
   }
   
+
+    /* table#t01 tr:nth-child(even) {
+    background-color: #eee;
+  } */
+
+  #t01 > caption {
+    caption-side: top ;
+  }
+
+  #finalList > li > a {
+    color: blue;
+    text-transform: none;
+  }
