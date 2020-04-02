@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <div style="display: flex;flex-direction: column;">
+            <title>HTML 5 Input Types</title>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        </div>
+        <style>
+            .some-page-wrapper{
+                margin: 15px;
+            }
+            .row{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+                width: 100%;
+            }
+
+            .column{
+                display: flex;
+                flex-direction: column;
+                flex-basis: 100%;
+                flex: 1;
+            }
+            .first-column{
+                height: 100px;
+            }
+            .second-column{
+                height: 100px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class='some-page-wrapper'>
+            <h2 align = "center">My Personality</h2>
+            <form align = "center">
+                <div class='row'>
+                    <div class='column'>
+                        <div class='first-column'>
+                            <label for="colorInput">Select color:</label>
+                            <input type="color" id="colorInput" name="colorInput" value="#000000"><br><br>
+
+                            <label for="birthday">Enter your Birthday:</label>
+                            <input type="date" id="birthday" name="birthday" required><br><br>
+
+                            <label for="email">Enter your email address:</label>
+                            <input type="email" id="email" name="email" placeholder = "example@gmail.com" required><br><br>
+
+                            <label for="quantity">Favorite Number (1-100):</label>
+                            <input type="number" id="favNumber" name="favNumber" min="2" max="99" placeholder="69" required><br><br>
+
+                            <label for="gsearch">Search Google:</label>
+                            <input type="search" id="gsearch" name="gsearch" placeholder="html5 fundamentals" required><br><br>
+
+                            <label for="homepage">Enter your homepage:</label>
+                            <input type="url" id="homepage" name="homepage" placeholder="https://www.w3schools.com" required><br><br>
+                        </div>
+                    </div>
+                    <div class='column'>
+                        <div class='second-column'>
+                            <label for="datalistInput">Select your favorite game:</label>
+                            <input list="game" name="game" placeholder="Select favorite game">
+                                <datalist id="game">
+                                    <option value="League Of Legends">
+                                    <option value="DOTA 2">
+                                    <option value="PUBG">
+                                    <option value="Apex Legends">
+                                    <option value="COD: Warzone">                        
+                                </datalist><br><br>
+                                
+                                <label for="daytime">Enter date and time today:</label>
+                                <input type="datetime-local" id="daytime" name="daytime"><br><br>
+
+                                <label for="bdaymonth">Enter current month:</label>
+                                <input type="month" id="month" name="month"><br><br>
+
+                                <label for="vol">Range (between 0 and 100):</label>
+                                <input type="range" id="vol" name="vol" min="0" max="100"><br><br>
+
+                                <label for="appt">Enter the time:</label>
+                                <input type="time" id="appt" name="appt"><br><br>
+
+                                <label for="week">Enter week:</label>
+                                <input type="week" id="week" name="week"><br><br>
+                        </div>
+                    </div>
+                </div>
+                <br><br><br><br><br><br><br><br><br><br><br><br><br><br><input type="submit" value="Submit">
+                <input type="reset">
+            </form>
+        </div>
+    </body>
+</html>
