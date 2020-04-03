@@ -1,0 +1,103 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Response Final Activity</title>
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/finals.css">
+    <link rel="icon" href="html5.ico">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js"></script>
+</head>
+
+<body>
+    <nav>
+        <a href="Finals.html" title="Return to Homepage">Klyde Jeremy Lingcod</a>
+    </nav>
+    <div >
+        <h1>Input Successfully Created!</h1>
+        <div class="resDiv">
+            <div>
+                <h4>Color: <span class="color"></span></h4>
+            </div>
+            <div>
+                <h4>DataList: <span class="datalist"></span></h4>
+            </div>
+            <div>
+                <h4>Date: <span class="date"></span></h4>
+            </div>
+            <div>
+                <h4>DateTime: <span class="password"></span></h4>
+            </div>
+            <div>
+                <h4>Email: <span class="email"></span></h4>
+            </div>
+            <div>
+                <h4>Month: <span class="month"></span></h4>
+            </div>
+            <div>
+                <h4>Number: <span class="number"></span></h4>
+            </div>
+            <div>
+                <h4>Range: <span class="range"></span></h4>
+            </div>
+            <div>
+                <h4>Search: <span class="search"></span></h4>
+            </div>
+            <div>
+                <h4>Time: <span class="time"></span></h4>
+            </div>
+            <div>
+                <h4>URL: <span class="url"></span></h4>
+            </div>
+            <div>
+                <h4>Week: <span class="week"></span></h4>
+            </div>
+            <div>
+                <a href="finals.html">Back</a>  
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div>
+            <div>
+                &copy; 2020 <a href="Finals.html">FINAL ACTIVITY in HTML5</a>
+             </div>
+        </div>
+    </footer>
+    <script>
+        $(function () {
+            let searchParams = new URLSearchParams(window.location.search)
+            let color = searchParams.get('color');
+            let datalist = searchParams.get('datalist');
+            let date = searchParams.get('date');
+            let datetime = searchParams.get('datetime');
+            let email = searchParams.get('email');
+            let month = searchParams.get('month');
+            let number = searchParams.get('number');
+            let range = searchParams.get('range');
+            let search = searchParams.get('search');
+            let time = searchParams.get('time');
+            let url = searchParams.get('url');
+            let week = searchParams.get('week');
+            $(".color").html(color);
+            $(".datalist").html(datalist);
+            $(".date").html(date);
+            $(".datetime").html(datetime);
+            $(".email").html(email);
+            $(".month").html(month);
+            $(".number").html(number);
+            $(".range").html(range);
+            $(".search").html(search);
+            $(".time").html(time);
+            $(".url").html(url);
+            $(".week").html(week);
+            $('nav').css('background-color', color);
+            $('nav a').css('background-color', color);
+            $('footer').css('background-color', color);
+            $('footer a').css('background-color', color);
+        })
+    </script>
+</body>
+
+</html>

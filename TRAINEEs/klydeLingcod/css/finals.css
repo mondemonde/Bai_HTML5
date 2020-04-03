@@ -2,6 +2,9 @@
     font-family: 'Lato', sans-serif;
     transition: 0.5s;
 }
+body{
+    margin: 0px;
+}
 label{
     font-weight: 400;
     display: block;
@@ -9,15 +12,21 @@ label{
 
 }
 input{
+    border: 1px solid #111;
     margin-bottom:20px;
 }
 input[type=number]{
     min-width: 125px;
 }
-input:not([type="submit"]):not([type="reset"]):not([type="color"]):not([type="number"]){
+input:not([type="submit"]):not([type="reset"]),a{
     width: 100%;
+    height:40px;
+    padding: 5px 10px;
 }
-input[type=submit],input[type=reset]{
+a{
+    text-decoration: none;
+}
+input[type=submit],input[type=reset],a{
     color: #fff;
     background-color: #222;
     border: 0px;
@@ -47,28 +56,62 @@ body > div{
     width: 75%;
     margin:auto;
 }
-body .navbar{
-    top: 0%;
-    position: fixed;
-    width: 100%;
-    background-color: #222;  
-    border-radius: 0px;
-}
-a.navbar-brand{
+nav a{
     color: #ffe400!important;
+    width:200px;
+    display: flex;
+    align-items: center;
 }
-.navbar ul li a:hover,.navbar ul li a:focus{
-    background-color: #222!important; 
-    color: #ffe400;
+footer a{
+    color: #ffe400!important;
+    width:200px;
 }
-body .navbar a{
+nav a:hover,footer a:hover{
+    color: #ccc!important;
+}
+nav{
+    display: flex;
+    align-items:center;
+    position: fixed;
+    background-color: #222;
+    width: 100%;
+    height:50px;
+}
+footer{
+    width:100%;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    height: 100px;
+    position: absolute;
+}
+footer > div{
+    display:flex;
+    align-items:center;
+}
+footer > div >div{
     color: #fff;
 }
 .name, .email, .password{
     font-weight: bold;
 }
+.resDiv{
+    display: flex;
+    flex-wrap: wrap;
+}
+.resDiv > div{
+    width: calc(50% - 20px);
+    margin: auto;
+}
+.resDiv > div:last-child{
+    margin-left:0px;
+}
 @media (max-width: 780px){
     form >div > div{
+        width: calc(100% - 20px);
+        margin: auto;
+    }
+    .resDiv > div{
         width: calc(100% - 20px);
         margin: auto;
     }
