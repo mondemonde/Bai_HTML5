@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+
+<head>
+    <div style="display: flex;flex-direction: column;">
+        <title>HTML 5 Input Types</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </div>
+    <style>
+        .some-page-wrapper {
+            margin: 15px;
+        }
+
+        .row {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            width: 100%;
+        }
+
+        .column {
+            display: flex;
+            flex-direction: column;
+            flex-basis: 100%;
+            flex: 1;
+        }
+
+        .first-column {
+            height: 100px;
+        }
+
+        .second-column {
+            height: 100px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="some-page-wrapper">
+        <h1 align="center">HTML5 Different Input Types</h1>
+        <form align="center">
+            <div class="row">
+                <div class="column">
+                    <div class="first-column">
+
+                        <label for="nameInput">Enter your Nickname:</label>
+                        <input type="text" id="nickname" name="nickname" placeholder="Nickname" required>
+                        <br><br>
+                        <!--Date-->
+                        <label for="birthday">Enter your Birthday:</label>
+                        <input type="date" id="birthday" name="birthday" required>
+                        <br><br>
+                        <!--Email-->
+                        <label for="email">Enter your email:</label>
+                        <input type="email" id="email" name="email" placeholder="youremail@email.com" required>
+                        <br><br>
+                        <!--Number-->
+                        <label for="quantity">Favorite Number (1-100):</label>
+                        <input type="number" id="favNumber" name="favNumber" min="1" max="100"
+                            placeholder="Enter Number" required>
+                            <br><br>
+                        <!--Search-->
+                        <label for="gsearch">Search Google:</label>
+                        <input type="search" id="gsearch" name="gsearch" placeholder="Google Search" required>
+                        <br><br>
+                        <!--URL-->
+                        <label for="homepage">Enter your homepage:</label>
+                        <input type="url" id="homepage" name="homepage" placeholder="www.sample.com" required>
+
+                    </div>
+                </div>
+                <div class="column">
+                    <div class="second-column">
+
+                        <!--Color-->
+                        <label for="colorInput">Select color:</label>
+                        <input type="color" id="colorInput" name="colorInput" value="#ff0000">
+                        <br><br>
+
+                        <!--Datalist-->
+                        <label for="datalistInput">Select your pet:</label>
+                        <input list="pets" name="pets" placeholder="Pet">
+                        <datalist id="pets">
+                            <option value="Dog">
+                            <option value="Cat">
+                            <option value="Bird">
+                            <option value="Fish">
+                            <option value="None">
+                        </datalist>
+                        <br><br>
+                        <!--DateTime-->
+                        <label for="daytime">Enter date and time today:</label>
+                        <input type="datetime-local" id="daytime" name="daytime">
+                        <br><br>
+                        <!--Month-->
+                        <label for="bdaymonth">Enter current month:</label>
+                        <input type="month" id="month" name="month">
+                        <br><br>
+
+                        <!--Range-->
+                        <label for="vol">Volume (between 0 and 100):</label>
+                        <input type="range" id="vol" name="vol" min="0" max="100">
+                        <br><br>
+
+                        <!--Time-->
+                        <label for="appt">Enter the time:</label>
+                        <input type="time" id="appt" name="appt">
+                        <br><br>
+
+                        <!--Week-->
+                        <label for="week">Enter week:</label>
+                        <input type="week" id="week" name="week">
+                        <br><br>
+
+                        <div>
+                            <input type="submit" value="Submit">
+                            <input type="reset" value="Reset">
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
