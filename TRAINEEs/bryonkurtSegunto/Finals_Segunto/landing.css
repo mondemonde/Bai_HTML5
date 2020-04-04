@@ -1,0 +1,16 @@
+h3{
+    text-align: center;
+}
+
+.result{
+    font-size: 30px;
+    text-align: center;
+}
+
+body{
+    background-color: darksalmon;
+}
+
+label{
+    font-weight: bolder;
+}

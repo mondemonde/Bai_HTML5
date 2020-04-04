@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<!--comment-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="style.css" />
+    <title>Assignment</title>
+  </head>
+</html>
+
+<body>
+  <main>
+    
+    
+      <form id="form" name ="frm">
+      
+      <div class="form-box">
+        <label for="=color">Select Color</label>
+        <input type="color" class="favecolor" id="colors"  />
+      </div>
+        
+      <div class = "form-box">
+      <label for="gun">Select gun</label>
+      <input list="guns" >
+
+      <datalist id="guns">
+        <option value="Handguns">
+        <option value="Smgs">
+        <option value="Lmgs">
+        <option value="Automatic Rifles">
+        <option value="Sniper Rifles">
+      </datalist>
+      </div>
+      <div class="form-box">
+        <label for="date">Date</label>
+        <input type="date" id="dates" name="date" required />
+        
+      
+      
+        <label for="datetime">Select Datetime</label>
+        <input type="datetime-local" id="datetimes" name="datetime">
+      </div>
+      <div class="form-box">
+        <label for="email">Email</label>
+        <input type="email" id="emails" name="email" required />
+      </div>
+      <div class="form-box">
+        <label for = "month">Select month</label>
+      <input type="month" id="start" name="start" min="2019-03" value="2019-03" />
+      </div>
+      <div class ="form-box">
+        <label for = "number">Select number 1 to 100</label>
+        <input type="number" id="quantity1" name="quantity" min="1" max="100" required />
+        </div>
+        <div class ="form-box">
+          <label for = "range">Select number 0 to 10</label>
+        <input type="range" id="points" name="pointss" min="1" max="10" />
+
+        </div>
+        <div class = "form-box">
+          <label for = "url">Type Url</label>
+          <input type="url" id="homepage" name="homepage" required />
+        
+        </div>
+        <div class ="form-box">
+          <label for = "week">Select week</label>
+          <input
+          type="week"
+          name="week"
+          id="camp-week"
+          min="2019-W1"
+          max="2019-W26"
+          required
+        />
+        
+        </div>
+        </form>
+       
+          <input  type="button" onclick="myFunction()" value="Reset form" class="res">
+        <form action="landing.html">
+          <input type ="submit" class="sub" value="Submit" onclick="sendInput()"/>
+        </form>
+        
+</div>
+</form>
+    
+  </main>
+  <script>
+    function myFunction() {
+      document.getElementById("form").reset();
+    }
+
+    function sendInput(){
+          
+   
+
+    //   var holder=document.getElementById("guns").value;
+    //   localStorage.setItem("textvalue",holder);
+      
+      var holder1=document.getElementById("colors").value ;
+      localStorage.setItem("textvalue1",holder1);
+      
+      var holder2=document.getElementById("datetimes").value;
+      localStorage.setItem("textvalue2",holder2);
+
+      var holder3=document.getElementById("emails").value;
+      localStorage.setItem("textvalue3",holder3);
+      
+      var holder4=document.getElementById("start").value;
+      localStorage.setItem("textvalue4",holder4);
+      
+      var holder5=document.getElementById("quantity1").value;
+      localStorage.setItem("textvalue5",holder5);
+
+      var holder6=document.getElementById("points").value;
+      localStorage.setItem("textvalue6",holder6);
+
+      var holder7=document.getElementById("homepage").value;
+      localStorage.setItem("textvalue7",holder7);
+
+      var holder8=document.getElementById("camp-week").value;
+      localStorage.setItem("textvalue8",holder8);
+      
+      var holder9=document.getElementById("dates").value;
+      localStorage.setItem("textvalue9",holder9);
+
+      
+      
+      return false;
+    }
+  
+
+
+    </script>
+</body>
