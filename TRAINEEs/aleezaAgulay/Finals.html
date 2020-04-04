@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="author" content="Aleeza Agulay" />
+    <meta name="description" content="HTML5 FINALS" />
+
+    <title>Finals HTML5</title>
+    <link rel="icon" href="html5.ico" />
+    <link rel="stylesheet" href="finalStyle.css" />
+    
+  </head>
+  <body>
+    <header>
+    <h1>HTML5 Final Project</h1>
+    </header>
+    <main>
+      
+      <section>
+        <article>
+          <h2>Welcome to Tech Customizer!</h2>
+          <p></p>
+        </article>
+      </section>
+    <form action="response.html" method="get">
+    <div class="flex-container">
+      
+      <h3>Fill in Details</h3>
+      <div>
+      <label>Customer Name: <input type="text" name="username" id="uName"></label>
+      <label>Email Address: <input type="email" name="uEmail" id="uEmail" required placeholder="username@email.com"></label>
+      </div>
+      <div>
+      <label>Social URL: <input type="url" name="userURL" id="userURL" required></label>
+      <label>Select Order: <input list="Orders" class="form-control" placeholder="Select Order" required></label>
+                <datalist id="Orders">
+                  <option value="Cellphone">
+                  <option value="Earphones">
+                  <option value="Headphones">
+                  <option value="Speaker">
+                  <option value="Mouse">
+                </datalist>
+      <label>Color: <input type="color" name="tColor" id="tColor"></label>
+      </div>
+      <div>
+      <label>Search Reference: <input type="search" required></label>
+      </div>
+      
+      <h3>Order Details</h3>
+      <div>
+      <label>Order Date: <input type="date"></label>
+      <label>No. of Gadgets: <input type="number" max="99" min="1" required></label>
+      <label>Range of Diversity: <input type="range"></label>
+      </div>
+      <div>
+      <label>Shipping DateTime: <input type="datetime-local"></label>
+      <label>Shipping Week: <input type="week" name="uWeek" id="uWeek"></label>
+      <label>Shipping Month: <input type="month" name="uMonth" id="uMonth"></label>
+      </div>
+
+    </div>
+
+    <div><input type="reset" value="Reset"><input type="submit" value="Submit"></div>
+    
+  </form>
+  </main>
+
+  <footer id='footer'>
+    <div>
+    
+    </div>
+  </footer>
+  </body>
+</html>
