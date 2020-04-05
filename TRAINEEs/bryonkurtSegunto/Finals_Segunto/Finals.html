@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link rel="stylesheet" href="style.css" />
-    <title>Assignment</title>
+    <title>Finals Checkup Exam</title>
   </head>
 </html>
 
@@ -37,10 +37,8 @@
       </div>
       <div class="form-box">
         <label for="date">Date</label>
-        <input type="date" id="dates" name="date" required />
-        
-      
-      
+        <input type="date" id="dates" name="date" required /></div>
+        <div class="form-box">
         <label for="datetime">Select Datetime</label>
         <input type="datetime-local" id="datetimes" name="datetime">
       </div>
@@ -58,7 +56,7 @@
         </div>
         <div class ="form-box">
           <label for = "range">Select number 0 to 10</label>
-        <input type="range" id="points" name="pointss" min="1" max="10" />
+        <input type="range" id="points" name="pointss" min="0" max="10" />
 
         </div>
         <div class = "form-box">
@@ -79,9 +77,10 @@
         
         </div>
         </form>
-       
-          <input  type="button" onclick="myFunction()" value="Reset form" class="res">
+        
+          <input  type="button" onclick="myFunction()" value="Reset" class="res">
         <form action="landing.html">
+      
           <input type ="submit" class="sub" value="Submit" onclick="sendInput()"/>
         </form>
         
