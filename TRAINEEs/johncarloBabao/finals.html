@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--comment-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- Quote from Wikipedia: "UTF-8 encodes each of the 1,112,064 code  -->
+    <!-- <meta http-equiv="refresh" content="3"> -->
+    <!-- <base href="https://www.xamun.com/" target="_blank"> -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+       href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"  
+      integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh"
+      crossorigin="anonymous"
+      
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>HTML 5 Finals</title>
+  </head>
+</html>
+
+<body>
+  <marquee><h1 class="myh3">Welcome to the Finals!</h1></marquee>
+
+  <div class="flex-container">
+    
+      
+    <div class="container">
+     
+      <div class="container">
+        <form>
+          <ul class="flex-outer">
+            <li>
+              <label for="color">Choose a Color!</label>
+              <input type="color" name="favecolor" value="#3F2A2A" ></label>
+            </li>
+            <li>
+              <label for="Heroes">Choose any hero!</label>
+              <input list="heroes" name="heroes" placeholder="Pick A Hero" />
+    <datalist id="heroes">
+      <option value="Slark"> </option>
+      <option value="Juggernaut"> </option>
+      <option value="Shadow Fiend"> </option>
+      <option value="Wraith King"> </option>
+      <option value="Sniper"> </option>
+      <option value="Outworld Devourer"> </option>
+      <option value="Bloodseeker"> </option>
+      <option value="Puck"> </option>
+      <option value="Lina"> </option>
+      <option value="Mirana"> </option>
+      <option value="Luna"> </option>
+      <option value="Lion"> </option>
+      <option value="Meepo"> </option>
+      <option value="Morphling"> </option>
+      <option value="Weaver"> </option>
+
+    </datalist>
+</label></br>
+            </li>
+            <li>
+              <label for="date">Date:</label>
+              <input type="date" id="date" name="date" placeholder="dd/mm/yyyy" /></label>
+            </li>
+            <li>
+              <label for="dateandtime">Date and Time:</label>
+              <input type="datetime-local" id="datetime" name="datetime"></label>
+            </li>
+            <li>
+              <label for="email">Enter Email Address:</label>
+              <input type="email" id="email" name="email" placeholder="@blastasia.com" /></label>
+            </li>
+            <li>
+              <label for="month">Enter Month:</label>
+              <input type="month" id="start" name="start" min="2019-03" value="2019-03" /></label>
+            </li>
+            <li>
+              <label for="number">Choose Number(0-999)</label>
+              <input type="number" id="quantity" name="quantity" min="1" max="999" placeholder="0-999" /></label>
+            </li>
+            <li>
+              <label for="range">Range (0-20)</label>
+              <<input type="range" id="points" name="points" min="0" max="20" /></label>
+            </li>
+            <li>
+              <label for="Search">Search Bar</label>
+              <input type="search" id="gsearch" name="gsearch" placeholder="How to HTML" /></label>
+            </li>
+            <li>
+              <label for="time">Time:</label>
+              <input type="time" id="appt" name="appt" min="09:00" max="18:00" required /></label>
+            </li>
+            <li>
+              <label for="URL">Type URL --></label>
+              <input type="url" id="homepage" name="homepage" placeholder="www.Facebook.com" /></label>
+            </li>
+            <li>
+              <label for="week">Week:</label>
+              <input type="week" name="week"  id="camp-week" min="2019-W1" max="2019-W26" required /></label>
+              </li>
+     
+      
+      
+   
+      
+     
+    
+    <br></br>
+    <br></br>
+    
+    <input class="reset" type="button" onclick="myFunction()" value="Reset">
+    
+    <input class="submit" type="button" onclick="alert('Submit Successfully!')" value ="Submit">
+    
+
+    <br></br>
+    <footer class='navHeader footer'>
+      <br>
+      <div class="text-center py-4">
+         &copy; 2020 <a href="#">HTML5 </a>
+      </div>
+      
+  </footer>
+
+    </form>
+    <script>
+      function myFunction() {
+        document.getElementById("myForm").reset();
+       
+      }
+      </script>
+    
+  </body>
