@@ -1,0 +1,115 @@
+<html lang="en">
+<head>
+<title>HTML5 Input Forms</title>
+<meta charset="utf-8"/>
+<link rel="stylesheet" href="style.css" type="text/css"/>
+</head>
+<style>
+    body {
+	/*background-image: url("img/image2.png");*/
+	color: #000305;
+	font-size: 87.5%;
+	font-family: Comic Sans MS;
+	line-height: 1.5;
+	text-align: left;
+	background-color: gray;
+}
+
+.body {
+	margin: 0px auto;
+	width: 80%;
+	clear: both;
+}
+	
+.mainContent {
+    display: flex;
+}
+
+.mainContent div {
+    border: 1px black solid;
+    padding: 10%;
+    background-color: blanchedalmond;
+}
+input[type='date'],[type='email'], [type='number'],[type='search'],[type='url']{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+input[list], [type='color'],[type='datetime'],[type='month'],[type='range'],[type='time'],[type='week']{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  place-content: center ;
+}
+
+
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+.Content1 {
+    flex: 1;
+}
+.Content2 {
+    flex: 1;
+}
+
+
+</style>
+
+<body class = "body">
+    <br>
+	<div class="mainContent">
+		<div class="Content1">
+            <h2>Required Input Type</h2>
+                <form>
+                    <input type="date" placeholder="Enter Date" required><br>
+                    <input type="email" name="email" placeholder="Enter Email" required id="email"> <br>
+                    <input type="number" min="1" max="100" placeholder="Enter Number 1-100" required><br>
+                    <input type="search" placeholder="Search" required><br>
+                    <input type="url" placeholder="Enter URL" required><br>
+                    <input type="submit" placeholder="Submit">
+                </form> 
+        </div>
+		<div class="Content2">
+            <form>
+		        <h3>Not Required Input Types</h3>
+                <input list="browsers" name="browser" placeholder="Select Browser">
+                <datalist id="browsers">
+                  <option value="Internet Explorer">
+                  <option value="Firefox">
+                  <option value="Chrome">
+                  <option value="Opera">
+                  <option value="Safari">
+                </datalist>
+                <input type="color" placeholder="Select Color">
+                <input type="datetime" placeholder="Enter DateTime">
+                <input type="month" placeholder="Enter Month">
+                <input type="range" id="vol" name="vol" min="0" max="50">
+                <input type="time" placeholder="Enter Time">
+                <input type="week" placeholder="Enter Week">
+                <input type="submit" placeholder="Submit">
+            </form>
+        </div>
+	</div>
+</body>
+</html>
