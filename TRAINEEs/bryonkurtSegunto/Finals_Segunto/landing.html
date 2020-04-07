@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<!--comment-->
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="landing.css" />
+    <title>Assignment</title>
+  </head>
+</html>
+  <body>
+    <h3>Your Input as follows:</h3>
+    <!-- <span id="result1"></span> <br> -->
+    <!-- <label for="col">Gun selected:<span id="result"></span></label> <br /> -->
+    <div class="result">
+      <!-- <span style:background-color="result1"></span> -->
+      <label for="col">Color:<span id="result1"></span></label> <br />
+    <label for="datetime">Date:<span id="result9"></span></label> <br />
+    <label for="Email">Your Email:<span id="result3"></span></label> <br />
+    <label for="url">URL:<span id="result7"></span></label><br />
+    <label for="point">Range:<span id="result6"></span></label><br />
+    <label for="month">Month:<span id="result4"></span></label><br />
+    <label for="num"
+      >Chosen number from 0 to 100:<span id="result5"></span></label
+    ><br />
+    <label for="week">Week:<span id="result8"></span></label>
+    </div>
+    <script>
+    //   document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+      document.getElementById("result1").innerHTML = localStorage.getItem(
+        "textvalue1"
+      );
+      document.getElementById("result9").innerHTML = localStorage.getItem(
+        "textvalue9"
+      );
+      document.getElementById("result3").innerHTML = localStorage.getItem(
+        "textvalue3"
+      ); //unique dapat id
+      document.getElementById("result4").innerHTML = localStorage.getItem(
+        "textvalue4"
+      );
+      document.getElementById("result5").innerHTML = localStorage.getItem(
+        "textvalue5"
+      );
+      document.getElementById("result6").innerHTML = localStorage.getItem(
+        "textvalue6"
+      );
+      document.getElementById("result7").innerHTML = localStorage.getItem(
+        "textvalue7"
+      );
+      document.getElementById("result8").innerHTML = localStorage.getItem(
+        "textvalue8"
+      );
+    </script>
+  </body>
+</html>
