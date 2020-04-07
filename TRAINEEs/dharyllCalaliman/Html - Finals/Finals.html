@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Dharyll Jan T. Calaliman">
+    <meta name="description" content="Project is for Html5 Final Exam">
+    <title>HTML5 Final Exam</title>
+</head>
+<body>
+    <div id="divForm1">
+        <h1 class="title">"Final Exam"</h1>
+        <form id="form1" action="responsePage.html" method="GET">
+            <label for="favcolor">Font color: </label>
+                <input type="color" id="favcolor"> <br><br>
+            <label for="browserslist">Choose your favorite browser: </label>
+                <input list="browserslist" placeholder="Browser List">
+                <datalist id="browserslist">
+                    <option value="Internet Explorer">
+                    <option value="Firefox">
+                    <option value="Chrome">
+                    <option value="Opera">
+                    <option value="Safari">
+                </datalist> <br><br>
+            <label for="birthday">Enter your birthday: </label>
+                <input type="Date" id="birthday" required> <br><br>
+            <label for="datetime">Enter todays date and time: </label>
+                <input type="datetime-local" id="datetime"> <br><br>
+            <label for="email">Enter your email: </label>
+                <input type="email" id="email" placeholder="Enter a valid email" required> <br><br>
+            <label for="todaysmonth">Enter todays month and year: </label>
+                <input type="month" id="todaysmonth"> <br><br>
+            <label for="age">Enter your age: </label>
+                <input type="number" id="age" min="1" max="100" placeholder="Age" required> <br><br>
+            <label for="fontsize">Font size: (0 - 100): </label>
+                <input type="range" id="fontsize" min="0" max="100" value="0"> <br><br>
+            <label for="search">Search: </label>
+                <input type="search" id="search" placeholder="Enter words to search" required> <br><br>
+            <label for="todaystime">Enter todays time: </label>
+                <input type="time" id="todaystime"> <br><br>
+            <label for="homepage">Enter a site homepage: </label>
+                <input type="url" id="homepage" placeholder="Sample: www.google.com" required> <br><br>
+            <label for="todaysweek">Enters todays week: </label>
+                <input type="week" id="todaysweek"> <br><br>
+            <input type="submit" value="Submit" id="submitbtn">
+            <input type="Reset" value="Reset" id="resetbtn">
+        </form>
+    </div>
+</body>
+</html>

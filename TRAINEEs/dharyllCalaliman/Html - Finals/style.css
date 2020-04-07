@@ -1,0 +1,57 @@
+#divForm1{
+    border: 1px solid black;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#form1{
+    border: 1px solid black;
+    width: 90%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 5px 2px;
+}
+
+label, input{
+    border: 1px solid black;
+    margin-inline-start: 5px;
+    margin-inline-end: 1px;
+    margin-top: 7px;
+}
+
+label{
+    padding: 2px;
+    font-weight: bold;
+    font-style: oblique;
+}
+
+h1.title{
+    border: 1px solid black;
+    width:90%;
+    margin-top: 10px;
+    margin-bottom: 0px;
+    padding: 2px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+    font-style: oblique;
+}
+
+@media screen and (max-width: 500px){
+    #divForm1{
+        width: 95%;
+    }
+}
+
+@media screen and (min-width: 700px){
+    #divForm1{
+        width: 45%;
+    }
+}
+
+
