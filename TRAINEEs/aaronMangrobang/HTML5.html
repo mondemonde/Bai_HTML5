@@ -4,102 +4,86 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="CSS/style.css">
     
+    <script src="Scripts/app.js"></script>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="html5.ico">
+
 
 </head>
 <body>
-    <div align="center" style="margin-top: 58px">
-        <table >
-            <form action="">
-            <tr>
-                <th><h3>HTML</h3></th>
-            </tr>
-            <tr>
-                <td>
-                    <label for="favcolor">Select color:</label>
+    <div class="topnav" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#news">News</a>
+        <a href="#contact">Contact</a>
+        <a href="#about">About</a>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    <div align="center" >
+
+        <form action="" ></form>
+            <div>
+                <label for="favcolor">Select color:</label>
                     <input type="color" id="favcolor" name="favcolor" value="#ff0000">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                        <select class="custom-select">
-                            <option selected>Data List</option>
-                            <option value="1">Data One</option>
-                            <option value="2">Data Two</option>
-                            <option value="3">Data Three</option>
-                          </select>
-                </td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                
-            </tr>
-            <tr>
-                <td>
-                        <label for="birthday">DATE:</label>
-                        <input type="date" id="birthday" name="birthday">
-                      
-                </td>
-                <td></td>
-                <td></td>
-                <td><label for="birthday">Date Time:</label><input type="datetime-local"></td>
-                <td></td>
-                <td></td>
-                
-            </tr>
-            <tr>
-                <td>
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <label for="bdaymonth">month:</label>
+            </div>
+            <div>
+                <select class="custom-select">
+                    <option selected>Data List</option>
+                    <option value="1">Data One</option>
+                    <option value="2">Data Two</option>
+                    <option value="3">Data Three</option>
+                  </select>
+            </div>
+            <div>
+                <label for="birthday">DATE:</label>
+                        <input type="date" id="birthday" name="birthday" required>
+            </div>
+            <div>
+                <label for="birthday">Date Time:</label>
+                    <input type="datetime-local">
+            </div>
+            <div>
+                <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" class="" placeholder="Email" required>
+            </div>
+            <div>
+                <label for="bdaymonth">month:</label>
                     <input type="month" id="bdaymonth" name="bdaymonth">
-                </td>
-                <td></td>
-                <td></td>
-                <td>
-                    <label for="number">Number (max 3):</label>
-                    <input type="number" id="quantity" name="quantity" min="1" max="3">
-                </td>
-                <td></td>
-                
-                <td>
-                    <label for="range">Range :</label>
+            </div>
+            <div>
+                <label for="number">Number (max 3):</label>
+                    <input type="number" id="quantity" name="quantity" min="1" max="100" placeholder= "Enter Number"required>
+            </div>
+            <div>
+                <label for="range">Range :</label>
                     <input type="range" id="points" name="points" min="0" max="10">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="text" name="search" placeholder="Search..">
-                </td>
-                <td>
-                    <input type="reset" class="reset">
-                </td>
-                <td>
-                    <label for="time">time</label>
-                    <Input type="time">
-                </td>
-                <td>
-                    <label for="url">url</label>
-                    <input type="url">
-                </td>
-                <td>
-                    <label for="week">Week</label>
+            </div>
+            <div>
+                <input type="text" name="search" placeholder="Search.." required>
+            </div>
+            <div>
+                <input type="reset" class="reset">
+            </div>
+            <div>
+                <label for="time">time</label>
+                    <input type="time">
+            </div>
+            <div>
+                <label for="url">url</label>
+                    <input type="url" placeholder="Enter Url" required>
+            </div>
+            <div>
+                <label for="week">Week</label>
                     <input type="week">
-                </td>
-                <td></td>
-            </tr>
+            </div>
+            <div>
+                <input type="submit">
+            </div>
         </form>
-        </table>
     </div>
+    
 </body>
 </html>
